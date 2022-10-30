@@ -77,10 +77,10 @@ $(".calc").on("click", () => {
         differInSquare, ComposNiAndSquare, dispersion] = main(xArr, nArr);
     
     for (item of selection) {
-        $(".res").append(`<tr><th>${item[0]}</th><th>${item[1]}</th><th>${xiniCompos[i]}</th><th>${differArr[i]}</th><th>${differInSquare[i]}</th><th>${ComposNiAndSquare[i]}</th></tr>`);
+        $(".res").append(`<tr><th>${item[0]}</th><th>${item[1]}</th><th>${parseFloat(xiniCompos[i]).toFixed(3)}</th><th>${parseFloat(differArr[i]).toFixed(3)}</th><th>${parseFloat(differInSquare[i]).toFixed(3)}</th><th>${parseFloat(ComposNiAndSquare[i]).toFixed(3)}</th></tr>`);
         i++;
     }
-    $(".res").append(`<tr><th></th><th>${nSum}</th><th>${xMiddle}</th><th></th><th></th><th>${dispersion}</th></tr>`);
+    $(".res").append(`<tr><th></th><th>${parseFloat(nSum).toFixed(3)}</th><th>${parseFloat(xMiddle).toFixed(3)}</th><th></th><th></th><th>${parseFloat(dispersion).toFixed(3)}</th></tr>`);
     $(".res").append("<tr colspan='6'><td></td><td></td><td></td><td></td><td></td><td></td></tr>");
     
 });
