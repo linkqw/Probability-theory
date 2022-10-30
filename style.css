@@ -1,0 +1,66 @@
+body {
+    background-color: #9e9e9e;
+}
+
+.wrapper {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.selection {
+    overflow: auto;
+    overflow-wrap: break-word;
+    height: max-content;
+    min-width: 252px;
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.gamma__input {
+    display: flex;
+    min-width: 250px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.calc {
+    font-size: 15px;
+    min-width: 258px;
+    border-radius: 5px;
+    padding: 8px 10px 10px 10px;
+}
+
+.res {
+    min-width: 257px;
+    font-size: 15px;
+    margin-top: 35px;
+}
+
+.res td {
+    padding: 10px 20px;
+}
+
+.res th {
+    white-space: nowrap;
+}
+
+@media (max-width:350px) {
+    body {
+        font-size: 10px;
+    }
+}
